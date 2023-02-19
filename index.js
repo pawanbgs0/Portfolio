@@ -2,12 +2,12 @@
 
 const resumeButton = document.getElementById("resume");
 resumeButton.addEventListener("click", function() {
-  window.open("https://docs.google.com/document/d/12OkK7g3LCMix86P_Wqu6obPPHdfN0WkNt8WzpHQpcEU/", "_blank");
+  window.open("https:google.com", "_blank");
 });
 
 const resumeButton2 = document.getElementById("resume2");
 resumeButton2.addEventListener("click", function() {
-  window.open("https://docs.google.com/document/d/12OkK7g3LCMix86P_Wqu6obPPHdfN0WkNt8WzpHQpcEU/", "_blank");
+  window.open("https:google.com", "_blank");
 });
 
 const helloButton = document.getElementById("hello");
