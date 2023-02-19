@@ -422,6 +422,10 @@ hr{
     border-left: none;
 }
 
+.tabcontent ul{
+    font-size: 1vw;
+}
+
 .duration{
     font-size: 0.9vw;
     color: #a8b2d1;
