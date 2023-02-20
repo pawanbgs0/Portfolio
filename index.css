@@ -928,7 +928,7 @@ hr{
     }
 
     .photo{
-        position: relative;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
@@ -963,6 +963,10 @@ hr{
     
     .photoContainer:hover .overlayPhoto{
         opacity: 1;
+    }
+
+    .photoContainer:hover .photo{
+        opacity: 0;
     }
 
     .square{
