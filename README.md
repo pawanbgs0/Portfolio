@@ -18,13 +18,13 @@ This website was built from scratch using the following technologies:
 
 Here are a few of my favorite projects that I've worked on:
 
-### Compress & Encrypt
+### [Compress & Encrypt](https://github.com/pawanbgs0/Huffman)
 
 A minimal file encryption tool that uses Huffman encoding for compression. This tool not only secures data, but also reduces file size for efficient storage and transfer. 
 
 ![Screenshot of Huffman](Media/Projects/huffman.png)
 
-### Sudoku Solver
+### [Sudoku Solver](https://github.com/pawanbgs0/Sudoku)
 
 This website solves Sudoku puzzles. It uses backtracking to generate and solve puzzles, and provides an intuitive interface for users to enter their puzzles and view the solution. 
 
