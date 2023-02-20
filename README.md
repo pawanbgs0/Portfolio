@@ -1,4 +1,4 @@
-# My Portfolio Website
+# My Portfolio [Website](https://pawanbgs0.github.io/Portfolio/)
 
 Welcome to my portfolio website! This website is a showcase of my web development skills and projects.
 
@@ -28,7 +28,7 @@ A minimal file encryption tool that uses Huffman encoding for compression. This 
 
 This website solves Sudoku puzzles. It uses backtracking to generate and solve puzzles, and provides an intuitive interface for users to enter their puzzles and view the solution. 
 
-![Screenshot of Project Name 2](Media/Projects/sudo.png)
+![Screenshot of Sudoku Solver](Media/Projects/sudo.png)
 
 
 ## Contact
