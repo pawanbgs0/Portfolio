@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     position: relative;
     bottom: -50px;
+    z-index: 3;
 }
 
 .section-2{
