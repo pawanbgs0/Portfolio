@@ -8,6 +8,8 @@ body{
     min-height: 100vh;
     overflow: auto;
     box-sizing: border-box;
+    position: relative;
+    bottom: -50px;
 }
 
 .section-2{

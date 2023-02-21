@@ -37,3 +37,15 @@ document.getElementById("defaultOpen").click();
 
 
 
+const element = document.querySelector('.section-1');
+const animation = element.animate(
+  [
+    { opacity: 0, bottom: '-50px' },
+    { opacity: 1, bottom: 0 }
+  ],
+  {
+    duration: 1000,
+    easing: 'ease-out',
+    fill: 'forwards'
+  }
+);

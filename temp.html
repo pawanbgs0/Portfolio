@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Population Bar Chart</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      .bar {
+        fill: steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Population Bar Chart</h1>
+    <svg width="600" height="400"></svg>
+    <script>
+      // Define the dataset
+      const dataset = [
+        { country: "China", population: 1394 },
+        { country: "India", population: 1365 },
+        { country: "United States", population: 328 },
+        { country: "Indonesia", population: 270 },
+        { country: "Brazil", population: 212 }
+      ];
+
+      // Define the dimensions of the chart
+      const width = 500;
+      const height = 300;
+      const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+
+      // Create the scales
+      const x = d3.scaleBand().range([margin.left, width - margin.right]).padding(0.1);
+      const y = d3.scaleLinear().range([height - margin.bottom, margin.top]);
+
+      // Set the domains for the scales
+      x.domain(dataset.map(d => d.country));
+      y.domain([0, d3.max(dataset, d => d.population)]);
+
+      // Create the chart
+      const svg = d3.select("svg")
+        .attr("viewBox", [0, 0, width, height]);
+
+      svg.selectAll("rect")
+        .data(dataset)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.country))
+        .attr("y", d => y(d.population))
+        .attr("width", x.bandwidth())
+        .attr("height", d => height - margin.bottom - y(d.population));
+
+      // Create the axes
+      const xAxis = d3.axisBottom(x);
+      const yAxis = d3.axisLeft(y);
+
+      svg.append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(xAxis);
+
+      svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(yAxis);
+    </script>
+  </body>
+</html>
