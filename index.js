@@ -2,7 +2,7 @@
 
 const resumeButton = document.getElementById("blog");
 resumeButton.addEventListener("click", function() {
-  window.open("https://pawanbgs0.github.io/Blog/");
+  window.open("https://drive.google.com/file/d/1UMPTXzUdwxxTj0KoNWefXUHfJHnAIJGu/view?usp=share_link", "_blank");
 });
 
 const resumeButton2 = document.getElementById("resume2");
