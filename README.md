@@ -24,12 +24,18 @@ A minimal file encryption tool that uses Huffman encoding for compression. This 
 
 ![Screenshot of Huffman](Media/Projects/huffman.png)
 
+
+### [Aatma](https://github.com/pawanbgs0/Aatma)
+
+I have developed a versatile Telegram bot that greets users, provides motivational quotes, displays dictionary definitions, and offers the latest news. 
+
+![Screenshot of Sudoku Solver](Media/Projects/Aatma.jpg)
+
 ### [Sudoku Solver](https://github.com/pawanbgs0/Sudoku)
 
 This website solves Sudoku puzzles. It uses backtracking to generate and solve puzzles, and provides an intuitive interface for users to enter their puzzles and view the solution. 
 
 ![Screenshot of Sudoku Solver](Media/Projects/sudo.png)
-
 
 ## Contact
 
