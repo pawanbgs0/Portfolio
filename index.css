@@ -48,7 +48,7 @@ body{
     color: #64ffda;
 }
 
-.sudodetailpara span{
+.leftDetailpara span{
     color: #64ffda;
 }
 
@@ -577,6 +577,131 @@ hr{
     padding-left: 3%;
 }
 
+/*************************************************************************/
+
+
+.AatmaprojectContainer{
+    margin-left: 6%;
+    margin-right: 7%;
+    margin-top: 10%;
+    /* margin-bottom: 10%; */
+    /* border: 5px solid white; */
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.AatmaContainer{
+    /* border: 5px solid red; */
+    position: relative;
+    margin-top: 1%;
+    margin-left: 45%;
+    margin-right: 0;
+    padding: 0;
+    width: 45%;
+    height: 100%;
+    z-index: 1;
+}
+
+.overlayAatma{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.AatmaContainer:hover .overlayAatma{
+    opacity: 1;
+}
+
+.AatmaContainer img{
+    height: 100%;
+    width: 100%;
+}
+
+.detailContainer{
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    position: absolute;
+    /* border: 5px solid green; */
+    box-sizing: border-box;
+    align-items: right;
+    width: 45%;
+    left: 45%;
+    z-index: 1;
+}
+
+.detailContainer h5{
+    color: #64ffda;
+}
+
+.headers{
+    width: 100%;
+    align-items: right;
+    text-align: right;
+}
+
+.headers a{
+    text-decoration: none;
+    color: white;
+}
+
+.headers a:hover{
+    color: #64ffda;
+}
+
+.detailpara
+{
+    /* border: 5px solid red; */
+    color: #a8b2d1;
+    background-color: #122240;
+    width: 100%;
+    box-shadow: 5px 5px 5px #020c1b;
+    border-radius: 5px;
+}
+
+.detailpara p{
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+
+.techUsed{
+    color: #a8b2d1;
+    width: 100%;
+}
+
+
+.techUsed ul{
+    list-style: none;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.techUsed li{
+    display: inline-block;
+    padding-left: 3%;
+}
+
+.exlinks ul{
+    list-style: none;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.exlinks li{
+    display: inline-block;
+    padding-left: 3%;
+}
+
+
 /* --------------------------------------------------------------------- */
 
 .sudoprojectContainer{
@@ -594,7 +719,7 @@ hr{
     /* border: 5px solid red; */
     position: relative;
     margin-top: 1%;
-    margin-left: 45%;
+    margin-left: 15%;
     margin-right: 0;
     padding: 0;
     width: 45%;
@@ -623,7 +748,7 @@ hr{
     width: 100%;
 }
 
-.sudodetailContainer{
+.leftDetailContainer{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     position: absolute;
     /* border: 5px solid green; */
@@ -636,26 +761,26 @@ hr{
     z-index: 1;
 }
 
-.sudodetailContainer h5{
+.leftDetailContainer h5{
     color: #64ffda;
 }
 
-.sudoheaders{
+.leftHeaders{
     width: 100%;
     align-items: left;
     text-align: left;
 }
 
-.sudoheaders a{
+.leftHeaders a{
     text-decoration: none;
     color: white;
 }
 
-.sudoheaders a:hover{
+.leftHeaders a:hover{
     color: #64ffda;
 }
 
-.sudodetailpara
+.leftDetailpara
 {
     /* border: 5px solid red; */
     color: #a8b2d1;
@@ -665,33 +790,33 @@ hr{
     border-radius: 5px;
 }
 
-.sudodetailpara p{
+.leftDetailpara p{
     text-align: left;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 
-.sudotechUsed{
+.leftTechUsed{
     color: #a8b2d1;
     width: 100%;
 }
 
 
-.sudotechUsed ul{
+.leftTechUsed ul{
     list-style: none;
     text-align: left;
     margin-top: 5%;
     padding-left: 0;
 }
 
-.sudotechUsed li{
+.leftTechUsed li{
     display: inline-block;
     padding-right: 3%;
     padding-left: 0;
 }
 
-.sudoexlinks ul{
+.leftExlinks ul{
     list-style: none;
     text-align: left;
     margin-top: 5%;
@@ -699,7 +824,7 @@ hr{
     padding-left: 0;
 }
 
-.sudoexlinks li{
+.leftExlinks li{
     display: inline-block;
     padding-right: 3%;
     padding-left: 0;
@@ -1101,10 +1226,6 @@ hr{
         display: none;
     }
 
-    .overlayhuff{
-        display: none;
-    }
-
     .detailContainer{
         /* border: 5px solid yellow; */
         background-color: #233554;
@@ -1115,6 +1236,21 @@ hr{
         width: 100%;
     }
 
+    /*************************************************************/
+
+    .AatmaprojectContainer{
+        margin-top: 15%;
+        margin-left: 2vw;
+        padding: 0;
+        width: 96%;
+        height: 88vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AatmaContainer{
+        display: none;
+    }
     /* ............................................................................ */
 
     .sudoprojectContainer{
@@ -1132,23 +1268,23 @@ hr{
         display: none;
     }
 
-    .sudoheaders{
+    .leftHeaders{
         text-align: left;
         margin-left: 2vw;
     }
 
-    .sudodetailpara{
+    .leftDetailpara{
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
         width: 96%;
         margin-left: 1vw;
     }
 
-    .sudodetailpara p{
+    .leftDetailpara p{
         text-align: left;
     }
 
-    .sudotechUsed ul{
+    .leftTechUsed ul{
         margin-right: 4vw;
         padding-left: 2vw;
         /* border: 5px solid red; */
@@ -1156,7 +1292,7 @@ hr{
         color: #ccd6f6;
     }
 
-    .sudoexlinks{
+    .leftExlinks{
         margin-left: 2vw;
     }
 
@@ -1164,7 +1300,7 @@ hr{
         text-align: left;
     }
 
-    .sudodetailContainer{
+    .leftDetailContainer{
         /* border: 5px solid yellow; */
         background-color: #233554;
         border-radius: 5px;
