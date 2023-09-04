@@ -1247,6 +1247,19 @@ hr{
     }
 
     /*************************************************************/
+    .cardShakeProjectContainer{
+        margin-top: 6%;
+        margin-left: 2vw;
+        margin-bottom: -1%;
+        /* border: 5px solid white; */
+        padding: 0;
+        width: 96%;
+        height: 88vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /****************************************************************/
 
     .AatmaprojectContainer{
         margin-top: 15%;
