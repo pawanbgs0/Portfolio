@@ -459,6 +459,16 @@ hr{
     /* box-sizing: border-box; */
 }
 
+.cardShakeProjectContainer{
+    margin-left: 6%;
+    margin-right: 7%;
+    margin-bottom: 10%;
+    /* border: 5px solid white; */
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+
 .projectContainer{
     margin-left: 6%;
     margin-right: 7%;
